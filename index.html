@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="./codemirror.css">
+    <script src="https://togetherjs.com/togetherjs-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.35.0/codemirror.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.35.0/mode/javascript/javascript.min.js"></script>
+    <style>
+        body, html {
+            background-color: #111;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        .codemirror-holder {
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="codemirror-holder js-codemirror"></div>
+</body>
+<script>
+    
+    const myCodeMirror = CodeMirror(document.querySelector('.js-codemirror'), {
+      lineNumbers: true,
+      value: 'console.log("asd")',
+      mode:  "javascript"
+    });
+    // TogetherJS(this);
+
+</script>
+</html>
